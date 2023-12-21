@@ -1,5 +1,5 @@
 with open("../data/file1.txt", "r") as file1:
-    fileStuff = file1.read()
+    fileStuff = file1.read()  # reads all lines as a single string
     print("File content:: ", fileStuff)
 
 print("Is file closed?", file1.closed)
@@ -12,12 +12,12 @@ print("File content after closing:: ", fileStuff)
 
 print("-------------------")
 with open("../data/file1.txt", "r") as file1:
-    lines = file1.readlines()
+    lines = file1.readlines()  # reads all lines as a list
 print("file lines:", lines)
 
 print("-------------------")
 with open("../data/file1.txt", "r") as file1:
-    first_line = file1.readline()
+    first_line = file1.readline()  # reads 1 (first) line as a string
     second_line = file1.readline()
 print("file first line:", first_line)
 print("file second line:", second_line)
@@ -29,10 +29,6 @@ with open("../data/file1.txt", "r") as file1:
     while True:
         line = file1.readline()
         if not line:
-            #print(f"no more lines: '{line}'")
+            # print(f"no more lines: '{line}'")
             break  # Stop when there are no more lines to read
         print(line)
-
-
-
-
