@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+    <row>
+        <name>JDOE</name>
+        <age>22</age>
+        <email>john@example.com</email>
+    </row>
+    <row>
+        <name>KDOE</name>
+        <age>23</age>
+        <email>kim@example.com</email>
+    </row>
+</root>
