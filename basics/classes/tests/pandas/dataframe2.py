@@ -162,3 +162,42 @@ import pandas as pd
 # df = pd.DataFrame(data, columns=['author_id', 'viewer_id'])
 # df = df[df['viewer_id'] == df['author_id']][['author_id']].rename(columns={"author_id": "id"}).sort_values('id', ascending=True).drop_duplicates()
 # print(df)
+
+# print("------------------------------------")
+# dataframe with tweets id and content
+# data = [
+#     [1, "I am a tweet"],
+#     [2, "I am doing well today, lets vote for NONE"],
+#     [3, "This is another tweet data"]
+# ]
+#
+# df = pd.DataFrame(data, columns=['id', 'content'])
+#
+# df = df[df['content'].str.len() > 15][['id']]
+# print(df)
+
+# print("------------------------------------")
+
+# data = [
+#     [1, "Michele", 500]
+#     , [2, "Joseph", 300]
+#     , [3, "Zoe", 200]
+#     , [4, "John", 400]
+#     , [5, "Joseph", 500]
+# ]
+#
+# df = pd.DataFrame(data, columns=['employee_id', 'name', 'salary'])
+#
+#
+# # df['bonus'] = df['salary'].apply(
+# #     lambda x: df['salary'] * 2 if ((df['id'] % 2 != 0) & (df['name'].str.startswith('M'))) else 0)
+#
+# def calculate_special_bonus(df: pd.DataFrame) -> pd.DataFrame:
+#     df['bonus'] = 0
+#     df.loc[((df['employee_id'] % 2 != 0) & (~df['name'].str.startswith('M'))), 'bonus'] = df['salary']
+#     return df[['employee_id', 'bonus']].sort_values('employee_id', ascending=True)
+#
+#
+# print(calculate_special_bonus(df))
+
+# print("------------------------------------")
